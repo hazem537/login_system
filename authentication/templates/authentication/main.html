@@ -1,0 +1,25 @@
+{% extends "authentication/base.html" %}
+
+
+{% block title %}Hello{% endblock title %}
+
+
+{% block content %}
+{% if request.user.is_authenticated %}
+<div> 
+    <h1>Hello in your account {{request.user.username}}</h1>
+</div>
+
+{% else %}
+<div class="main-panel">
+    <div class="signup-panel">
+        <h2>Add new Account</h2>
+        <a href=" {% url "signup" %} " class="btn btn-primary">Sign up</a>
+    </div>
+    <div class="login-panel">
+    <h2>Already have Account</h2>
+    <a href=" {% url "login" %} " class="btn btn-primary">login up</a>
+</div>
+</div>
+{% endif %}
+{% endblock content %}
