@@ -87,7 +87,7 @@ DATABASES = {
         'NAME': 'login_user',
         'USER': 'default',
         'PASSWORD': '0qe8HQNRiwJp',
-        'HOST': 'ep-aged-silence-54497879-pooler.us-east-1.postgres.vercel-storage.com',
+        'HOST': 'postgres://default:0qe8HQNRiwJp@ep-aged-silence-54497879-pooler.us-east-1.postgres.vercel-storage.com:5432/verceldb',
         'PORT': '5432',
         'OPTIONS': {
             'sslmode': 'require',
